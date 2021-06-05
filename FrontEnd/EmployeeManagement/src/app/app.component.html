@@ -1,0 +1,21 @@
+<div class='card'>
+  <div class='card-header'>
+    <div class='row'>
+      <div class='col-md-10'> <h2>Employees</h2></div>
+      <div class='col-md-2'> <button type="button" class="btn btn-link" (click)="addEmployee()">+Add New</button>
+        </div>
+    </div>
+  </div>
+  <div *ngIf='errorMessage'
+class='alert alert-danger'>
+Error: {{ errorMessage }}
+</div>
+  <div class='row'>
+    <div class='col-md-3 mar-left-14'> 
+      <app-employeelist #employeellist [employees]="employees" (selection)="onEmployeeSelection($event)" (deletion)="onEmployeeDelete()"></app-employeelist>
+    </div>
+    <div class='col-md-8'> 
+      <app-employeedetails #employeedetails [employee]="selectedEmp" (update)="onEmployeeUpdate($event)"></app-employeedetails>  
+    </div>
+  </div>
+  </div>

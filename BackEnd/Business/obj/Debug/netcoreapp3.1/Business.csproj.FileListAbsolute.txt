@@ -1,0 +1,11 @@
+C:\Users\reka\source\repos\EmployeeManagement\Business\bin\Debug\netcoreapp3.1\Business.deps.json
+C:\Users\reka\source\repos\EmployeeManagement\Business\bin\Debug\netcoreapp3.1\Business.dll
+C:\Users\reka\source\repos\EmployeeManagement\Business\bin\Debug\netcoreapp3.1\Business.pdb
+C:\Users\reka\source\repos\EmployeeManagement\Business\bin\Debug\netcoreapp3.1\Common.dll
+C:\Users\reka\source\repos\EmployeeManagement\Business\bin\Debug\netcoreapp3.1\Common.pdb
+C:\Users\reka\source\repos\EmployeeManagement\Business\obj\Debug\netcoreapp3.1\Business.csprojAssemblyReference.cache
+C:\Users\reka\source\repos\EmployeeManagement\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfoInputs.cache
+C:\Users\reka\source\repos\EmployeeManagement\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfo.cs
+C:\Users\reka\source\repos\EmployeeManagement\Business\obj\Debug\netcoreapp3.1\Business.csproj.CopyComplete
+C:\Users\reka\source\repos\EmployeeManagement\Business\obj\Debug\netcoreapp3.1\Business.dll
+C:\Users\reka\source\repos\EmployeeManagement\Business\obj\Debug\netcoreapp3.1\Business.pdb

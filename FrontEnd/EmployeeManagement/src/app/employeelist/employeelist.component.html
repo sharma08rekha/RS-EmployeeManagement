@@ -1,0 +1,21 @@
+<div *ngIf='errorMessage'
+class='alert alert-danger'>
+Error: {{ errorMessage }}
+</div>
+<div *ngIf='successMessage' class='alert alert-success'>
+  {{ successMessage }}
+</div>
+<div class='card'>
+
+    <div class="row rowData mar-botton-5"  id="row_{{i}}" *ngFor='let employee of employees; index as i;'>
+
+    <div class="card-body" (click)="selectEmployee(employee)">
+      <h5>{{employee.fullName}}</h5>
+      <span>{{getPositionName(employee.position)}}</span>
+    </div>
+    <div class="card-body text-right">
+        <button type="button" class="btn btn-link" (click)="deleteEmployee(employee)">Delete</button>
+
+    </div>
+  </div>
+

@@ -1,0 +1,8 @@
+C:\Users\reka\source\repos\EmployeeManagement\Common\bin\Debug\netcoreapp3.1\Common.deps.json
+C:\Users\reka\source\repos\EmployeeManagement\Common\bin\Debug\netcoreapp3.1\Common.dll
+C:\Users\reka\source\repos\EmployeeManagement\Common\bin\Debug\netcoreapp3.1\Common.pdb
+C:\Users\reka\source\repos\EmployeeManagement\Common\obj\Debug\netcoreapp3.1\Common.csprojAssemblyReference.cache
+C:\Users\reka\source\repos\EmployeeManagement\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfoInputs.cache
+C:\Users\reka\source\repos\EmployeeManagement\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfo.cs
+C:\Users\reka\source\repos\EmployeeManagement\Common\obj\Debug\netcoreapp3.1\Common.dll
+C:\Users\reka\source\repos\EmployeeManagement\Common\obj\Debug\netcoreapp3.1\Common.pdb

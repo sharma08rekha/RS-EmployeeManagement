@@ -1,0 +1,83 @@
+<div *ngIf='errorMessage'
+class='alert alert-danger'>
+Error: {{ errorMessage }}
+</div>
+<div *ngIf='successMessage' class='alert alert-success'>
+  {{ successMessage }}
+</div>
+<div class='card'>
+    <div class='card-header'>
+      <h5>Personal Information</h5>
+    </div>
+<form #empFrom="ngForm" (ngSubmit)= "onSubmit()">  
+    <div class='row'>
+        <div class='col-md-8'>
+            <div class='row'>
+                <div class='col-md-8'><input type="hidden" id="id" name="id"
+                    [(ngModel)]="employeeModel.id"/>
+                </div>
+              </div>
+          <div class='row'>
+            <label class="col-md-4 col-form-lable" for="fullNameId"> Full Name</label>
+            <div class='col-md-8'><input required type="text" id="fullNameId" name="fullName"
+                #fullName="ngModel"
+                [(ngModel)]="employeeModel.fullName"/>
+                <span class="alert-danger" *ngIf="fullName.touched && fullName.errors?.required">
+                    Please enter name.
+                </span>
+            </div>
+          </div>
+
+          <div class='row'>
+            <label class="col-md-4 col-form-lable" for="addressId"> Address</label>
+            <div class='col-md-8'><input required type="text" id="addressId" name="address"
+                #address="ngModel"
+                [(ngModel)]="employeeModel.address"/>
+                <span class="alert-danger" *ngIf="address.touched && address.errors?.required">
+                    Please enter address.
+                </span>
+            </div>
+          </div>
+
+          <div class='row'>
+            <label class="col-md-4 col-form-lable" for="phoneNumberId"> Phone Number</label>
+            <div class='col-md-8'><input required type="text" id="phoneNumberId" name="phoneNumber" maxlength="10" minlength="10" (keypress)="numberOnly($event)" 
+                #phoneNumber="ngModel"
+                [(ngModel)]="employeeModel.phoneNumber"/>
+                <span class="alert-danger" *ngIf="phoneNumber.touched &&  phoneNumber.errors?.required">
+                    Please enter phone number.
+                </span>
+                <span class="alert-danger" *ngIf="phoneNumber.touched &&  (phoneNumber.errors?.maxlength || phoneNumber.errors?.minlength)">
+                  Phone number must be 10 digit.
+              </span>
+            </div>
+          </div>
+
+          <div class='row'>
+            <label class="col-md-4 col-form-lable" for="positionId"> Position</label>
+            <div class='col-md-8'>
+                <select [(ngModel)]="employeeModel.position" #position="ngModel" name="position" required class="control-wd-184">
+                    <option value="1">Project Manager</option>
+                    <option value="2">Production Manager</option>
+                    <option value="3">General Manager</option>
+                    <option value="4">HR Director</option>
+                    <option value="5">Senior Editor</option>                                                                                
+                    <option value="6">Editor</option>                                                                                
+                </select>
+                <span class="alert-danger" *ngIf="position.touched && position.errors?.required">
+                    Please select position.
+                </span>
+            </div>
+          </div>
+        </div>
+     </div>
+      <div class='card-footer'>
+        <button class='btn btn-primary'
+                type="submit"
+                style='width:80px'
+                [title]="empFrom.valid ? 'Save your entered data ' : 'Disable until the form is valid'"
+                [disabled]="!empFrom.valid"> Save
+        </button>
+      </div>
+    </form>
+    </div>
